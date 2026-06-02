@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: enterprise-system-20260602-190222-xsyus8n2g21e-service
+spec:
+  selector:
+    app: enterprise-system-20260602-190222-xsyus8n2g21e
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
